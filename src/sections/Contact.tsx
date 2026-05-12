@@ -48,7 +48,8 @@ export function Contact() {
           </h2>
 
           <p className="font-dm text-[13px] leading-[1.7] text-cream/70 mb-10">
-            Rajlaxmi Rundavan,Ambethan Road, Chakan ,Maharahtra,410501 .
+            Ritesh Tours & Travels Ambethan Road, Chakan, Maharashtra – 410501,
+            India. .
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">
