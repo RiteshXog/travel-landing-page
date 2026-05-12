@@ -106,7 +106,7 @@ export function Shop() {
         initial={{ opacity: 0, y: 30 }}
         animate={headerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-        className="px-6 md:px-[60px] pt-10 md:pt-16 pb-6"
+        className="px-6 md:px-[60px] pt-4 md:pt-10 pb-4"
       >
         <h2
           className="font-cormorant font-light text-cream"
@@ -117,7 +117,7 @@ export function Shop() {
       </motion.div>
 
       {/* Bento grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[400px] md:auto-rows-[480px]">
+      <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[280px] md:auto-rows-[420px]">
         {/* Large left cell — clothing */}
         <ImageCell
           src={`${import.meta.env.BASE_URL}bento-clothing.jpg`}

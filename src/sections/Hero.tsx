@@ -18,14 +18,14 @@ export function Hero() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-[120vh] overflow-hidden"
+      className="relative min-h-screen md:min-h-screen"
     >
       {/* Background plane — mountains image sits ABOVE BALI text (z-[3]) */}
-      <motion.div style={{ y: bgY }} className="absolute inset-0 z-[2]">
+      <motion.div style={{ y: bgY }} className="absolute inset-0 z-[2min-h-[120vh]]">
         <img
-          src={`${import.meta.env.BASE_URL}hero-mount.png`}
+          src={`${import.meta.env.BASE_URL}hero-mount.jpg`}
           alt="Misty karst mountains"
-          className="w-full h-full object-cover object-center scale-110"
+          className="w-full h-[120%] object-cover object-center scale-110"
         />
         {/* Gradient mask: fade out bottom of mountains to reveal BALI below */}
         <div
@@ -49,7 +49,7 @@ export function Hero() {
         <motion.h1
           style={{
             y: textY,
-            fontSize: "clamp(8rem, 70vw, 32rem)",
+            fontSize: "clamp(4rem, 32vw, 32rem)",
             opacity: 0.42,
             letterSpacing: "-0.04em",
             lineHeight: 0.85,
@@ -71,7 +71,7 @@ export function Hero() {
             <div className="flex items-center gap-2">
               <LeafIcon size={16} className="text-cream" />
 
-              <span className="font-dm font-medium text-cream text-[11px] tracking-wide-custom uppercase">
+              <span className="font-dm font-medium text-cream text-[11px] md:text-[52px]  tracking-wide-custom uppercase">
                 BALI
               </span>
             </div>
@@ -156,7 +156,7 @@ export function Hero() {
           </div>
 
           {/* Middle panel — image card */}
-          <div className="relative h-[220px] md:h-auto image-vignette overflow-hidden">
+          <div className="relative h-full image-vignette overflow-hidden">
             <img
               src={`${import.meta.env.BASE_URL}new.png`}
               alt="Moss-covered carved stone"

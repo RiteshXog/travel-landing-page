@@ -115,3 +115,39 @@
     transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   }
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Better mobile typography */
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+
+  .tracking-wide-custom {
+    letter-spacing: 0.1em;
+  }
+
+  h1 {
+    line-height: 0.95 !important;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+}
+
+/* Smooth image rendering */
+img {
+  object-fit: cover;
+  display: block;
+}
