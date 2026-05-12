@@ -1,3 +1,22 @@
+A cinematic luxury landing page inspired by Bali aesthetics and editorial design.
+
+## Tech Stack
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Vite
+
+## Features
+- Cinematic hero section
+- Smooth parallax effects
+- Luxury typography
+- Responsive layout
+- Editorial UI design
+
+## Author
+Ritesh Naik.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
