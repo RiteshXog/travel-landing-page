@@ -23,7 +23,7 @@ export function Hero() {
       {/* Background plane — mountains image sits ABOVE BALI text (z-[3]) */}
       <motion.div style={{ y: bgY }} className="absolute inset-0 z-[2]">
         <img
-          src="/hero-mountains.jpg"
+          src={`${import.meta.env.BASE_URL}hero-mount.png`}
           alt="Misty karst mountains"
           className="w-full h-full object-cover object-center scale-110"
         />
@@ -117,7 +117,7 @@ export function Hero() {
         {/* Left edge vine */}
         <div className="absolute left-0 top-[20%] h-[60%] opacity-25 pointer-events-none">
           <img
-            src="/hero-vine.png"
+            src={`${import.meta.env.BASE_URL}hero-vine.png`}
             alt=""
             className="h-full w-auto object-contain"
             style={{ transform: "rotate(-10deg) translateX(-20%)" }}
@@ -158,7 +158,7 @@ export function Hero() {
           {/* Middle panel — image card */}
           <div className="relative h-[220px] md:h-auto image-vignette overflow-hidden">
             <img
-              src="/bento-stone.jpg"
+              src={`${import.meta.env.BASE_URL}new.png`}
               alt="Moss-covered carved stone"
               className="w-full h-full object-cover"
             />

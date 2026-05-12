@@ -99,7 +99,7 @@ export function Contact() {
           className="relative h-[400px] md:h-auto image-vignette overflow-hidden"
         >
           <img
-            src="/contact-ganesh.jpg"
+            src={`${import.meta.env.BASE_URL}contact-ganesh.jpg`}
             alt="Carved stone Ganesh with offerings"
             className="w-full h-full object-cover"
           />

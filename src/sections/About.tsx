@@ -21,7 +21,7 @@ export function About() {
           className="relative h-[400px] md:h-auto image-vignette overflow-hidden"
         >
           <img
-            src="/about-woman.jpg"
+            src={`${import.meta.env.BASE_URL}about-woman.jpg`}
             alt="Woman in rice terraces at golden hour"
             className="w-full h-full object-cover"
           />

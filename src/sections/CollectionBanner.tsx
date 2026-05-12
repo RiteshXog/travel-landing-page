@@ -22,7 +22,7 @@ export function CollectionBanner() {
         className="absolute inset-0 z-[1] will-change-transform"
       >
         <img
-          src="/collection-waterfall.jpg"
+          src={`${import.meta.env.BASE_URL}collection-waterfall.jpg`}
           alt="Cascading jungle waterfall"
           className="w-full h-[130%] object-cover"
         />

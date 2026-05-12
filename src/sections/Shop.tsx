@@ -120,7 +120,7 @@ export function Shop() {
       <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[400px] md:auto-rows-[480px]">
         {/* Large left cell — clothing */}
         <ImageCell
-          src="/bento-clothing.jpg"
+          src={`${import.meta.env.BASE_URL}bento-clothing.jpg`}
           alt="Hand-woven garments on display"
           delay={0}
           overlay={
@@ -134,7 +134,7 @@ export function Shop() {
 
         {/* Middle cell — waterfall */}
         <ImageCell
-          src="/bento-waterfall.jpg"
+          src={`${import.meta.env.BASE_URL}bento-waterfall.jpg`}
           alt="Cascading jungle waterfall"
           delay={0.15}
         />
@@ -143,7 +143,7 @@ export function Shop() {
         <div className="grid grid-rows-2">
           {/* Top — textile */}
           <ImageCell
-            src="/bento-textile.jpg"
+            src={`${import.meta.env.BASE_URL}bento-textile.jpg`}
             alt="Hand-painted batik textile"
             delay={0.3}
             overlay={
