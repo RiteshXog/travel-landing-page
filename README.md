@@ -1,38 +1,77 @@
-A cinematic luxury landing page inspired by Bali aesthetics and editorial design.
+# 🌴 Bali-Inspired Luxury Travel Landing Page
 
-## Tech Stack
-- React
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Vite
+A cinematic luxury travel landing page inspired by the serene beauty of Bali, combining editorial aesthetics with immersive modern web interactions.
 
-## Features
-- Cinematic hero section
-- Smooth parallax effects
-- Luxury typography
-- Responsive layout
-- Editorial UI design
+## ✨ Live Preview
 
-## Author
-Ritesh Naik.
+🔗 **Experience the website live:**
+https://riteshxog.github.io/travel-landing-page/
+
+---
+
+## 🚀 Tech Stack
+
+* ⚛️ React
+* 📘 TypeScript
+* 🎨 Tailwind CSS
+* 🎥 Framer Motion
+* ⚡ Vite
+
+---
+
+## 🌟 Features
+
+* 🎬 Cinematic hero section
+* 🌊 Smooth parallax scrolling effects
+* ✨ Luxury-inspired typography
+* 📱 Fully responsive design
+* 📰 Editorial-style UI aesthetics
+* ⚡ Fast and optimized performance
+
+---
+
+## 📸 Design Inspiration
+
+Inspired by:
+
+* Bali luxury resorts
+* Editorial magazine layouts
+* Minimal cinematic storytelling
+* Premium travel experiences
+
+---
+
+## 👨‍💻 Author
+
+**Ritesh Naik**
+
+---
 
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+## Official Plugins
+
 Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) — Uses Babel (or oxc when used in rolldown-vite) for Fast Refresh.
+* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) — Uses SWC for Fast Refresh.
+
+---
 
 ## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The React Compiler is not enabled on this template because of its impact on development and build performance.
 
-## Expanding the ESLint configuration
+Learn more here:
+https://react.dev/learn/react-compiler/installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
+
+## Expanding the ESLint Configuration
+
+If you are developing a production application, consider enabling type-aware lint rules.
 
 ```js
 export default defineConfig([
@@ -40,32 +79,28 @@ export default defineConfig([
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
       tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
+      // tseslint.configs.strictTypeChecked,
+      // tseslint.configs.stylisticTypeChecked,
     ],
     languageOptions: {
       parserOptions: {
         project: ['./tsconfig.node.json', './tsconfig.app.json'],
         tsconfigRootDir: import.meta.dirname,
       },
-      // other options...
     },
   },
 ])
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+You can also install:
+
+* eslint-plugin-react-x
+* eslint-plugin-react-dom
+
+for additional React-specific linting support.
 
 ```js
-// eslint.config.js
 import reactX from 'eslint-plugin-react-x'
 import reactDom from 'eslint-plugin-react-dom'
 
@@ -74,10 +109,7 @@ export default defineConfig([
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
-      // Other configs...
-      // Enable lint rules for React
       reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
       reactDom.configs.recommended,
     ],
     languageOptions: {
@@ -85,7 +117,6 @@ export default defineConfig([
         project: ['./tsconfig.node.json', './tsconfig.app.json'],
         tsconfigRootDir: import.meta.dirname,
       },
-      // other options...
     },
   },
 ])
